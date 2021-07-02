@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Zaruba profile</title>
+  </head>
+  <body>
+    <div class="popup-notification"></div>
+    <header class="page-header">
+      <nav class="header-nav center">
+        <a href=""><img src="assets/header-logo.png" alt="" /></a>
+        <a href="">Вернуться на главную страницу</a>
+      </nav>
+    </header>
+    <main>
+      <div class="main-inside center">
+        <div class="upper-row">
+          <section class="profile-block content-block">
+            <h1>Профиль</h1>
+            <div class="profile">
+              <div class="profile-photo">
+                <img src="assets/profile-image.jpg" alt="" />
+              </div>
+              <div class="profile-info">
+                <p class="profile-name">Somelongnickname777</p>
+                <p class="exit">
+                  <button>
+                    <img
+                      src="assets/exit-button.svg"
+                      alt="Выход"
+                      class="exit-button"
+                    />
+                  </button>
+                  Выход
+                </p>
+                <div class="profile-stats">
+                  <div class="profile-stat">
+                    <p>Баланс</p>
+                    <p class="currency-value">100 Z</p>
+                  </div>
+                  <div class="profile-stat">
+                    <p>Энергия</p>
+                    <p class="currency-value">100 X</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="transactions-history content-block">
+            <h1>История транзакций</h1>
+            <table class="transactions-table">
+              <tr>
+                <td>13.06.2021</td>
+                <td>23 Z</td>
+                <td>230 Руб</td>
+                <td><img src="assets/status-positive.svg" alt="" /></td>
+              </tr>
+              <tr>
+                <td>13.06.2021</td>
+                <td>23 Z</td>
+                <td>230 Руб</td>
+                <td><img src="assets/status-negative.svg" alt="" /></td>
+              </tr>
+              <tr>
+                <td>13.06.2021</td>
+                <td>23 Z</td>
+                <td>230 Руб</td>
+                <td><img src="assets/status-waiting.svg" alt="" /></td>
+              </tr>
+            </table>
+            <button class="full-history">Вся история транзакций...</button>
+          </section>
+        </div>
+        <div class="full-history-table content-block">
+          <header class="full-history-header">
+            <h1>История транзакций</h1>
+            <button class="full-history-exit">
+              Вернуться назад<img src="assets/back-button.svg" alt="" />
+            </button>
+          </header>
+          <div class="full-transactions-table">
+            <div class="full-transactions-table-row">
+              <div class="transactions-table-item header-item">
+                <p>№</p>
+              </div>
+              <div class="transactions-table-item header-item">
+                <p>Дата</p>
+              </div>
+              <div class="transactions-table-item header-item">
+                <p>Z</p>
+              </div>
+              <div class="transactions-table-item header-item">
+                <p>Цена продажи</p>
+              </div>
+              <div class="transactions-table-item header-item">
+                <p>Состояние</p>
+              </div>
+            </div>
+            <div class="full-transactions-table-row">
+              <div class="transactions-table-item">
+                <p>3</p>
+              </div>
+              <div class="transactions-table-item">
+                <p>01.01.2021</p>
+              </div>
+              <div class="transactions-table-item">
+                <p>130 Z</p>
+              </div>
+              <div class="transactions-table-item">
+                <p>3000 тг.</p>
+              </div>
+              <div class="transactions-table-item">
+                <p class="declined">
+                  Отменено <img src="assets/status-negative.svg" alt="" />
+                </p>
+              </div>
+            </div>
+            <div class="full-transactions-table-row">
+              <div class="transactions-table-item">
+                <p>2</p>
+              </div>
+              <div class="transactions-table-item">
+                <p>01.01.2021</p>
+              </div>
+              <div class="transactions-table-item">
+                <p>150 Z</p>
+              </div>
+              <div class="transactions-table-item">
+                <p>5000 тг.</p>
+              </div>
+              <div class="transactions-table-item">
+                <p class="successful">
+                  Успешно <img src="assets/status-positive.svg" alt="" />
+                </p>
+              </div>
+            </div>
+            <div class="full-transactions-table-row">
+              <div class="transactions-table-item">
+                <p>1</p>
+              </div>
+              <div class="transactions-table-item">
+                <p>01.01.2021</p>
+              </div>
+              <div class="transactions-table-item">
+                <p>10 Z</p>
+              </div>
+              <div class="transactions-table-item">
+                <p>1000 тг.</p>
+              </div>
+              <div class="transactions-table-item">
+                <p class="waiting">
+                  В процессе <img src="assets/status-waiting.svg" alt="" />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="sale content-block">
+          <img src="assets/gembox.png" alt="" />
+          <div class="sale-content">
+            <div class="sale-number">
+              <h1>Количество продаваемых *название внутриигровой валюты*</h1>
+              <div class="sale-slider">
+                <button class="sale-slider-thumb">
+                  <span class="slider-thumb-value">0</span> Z
+                </button>
+                <div class="right-darkening"></div>
+              </div>
+              <div class="recommended-price sell-block">
+                <div class="price-block">
+                  <div class="recommended price">
+                    <h1>Рекомендованная цена:</h1>
+                    <p><span class="recommended-price-value">1 000</span> тг</p>
+                  </div>
+                  <div class="result price">
+                    <h1>Итого:</h1>
+                    <p><span class="recommended-price-value">8 700</span> тг</p>
+                  </div>
+                </div>
+                <button class="sell-button yellow-button">Продать</button>
+              </div>
+              <div class="custom-price sell-block">
+                <div class="price-block">
+                  <div class="custom price">
+                    <h1>Ваша цена:</h1>
+                    <input
+                      name="custom-price-input"
+                      type="text"
+                      placeholder="1000 тг"
+                    />
+                  </div>
+                  <div class="result price">
+                    <h1>Итого:</h1>
+                    <p><span class="recommended-price-value">8 700</span> тг</p>
+                  </div>
+                </div>
+                <button class="sell-button yellow-button">Продать</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="outer-text">
+        <a href="#">Тех. Поддержка</a>
+        <a href="#">Наши новости</a>
+        <a href="#">Вернуться на сайт игры</a>
+      </div>
+      <div class="social-links">
+        <div class="social-links-inside">
+          <a href="">
+            <svg
+              width="46"
+              height="46"
+              viewBox="0 0 46 46"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.3085 5.75C8.67537 5.75 5.75 8.67537 5.75 12.3085V35.1099C5.75 38.743 8.67537 41.6684 12.3085 41.6684H24.6666V27.6265H20.9536V22.571H24.6666V18.2518C24.6666 14.8585 26.8605 11.7428 31.9143 11.7428C33.9605 11.7428 35.4736 11.9392 35.4736 11.9392L35.3546 16.6602C35.3546 16.6602 33.8114 16.6456 32.1275 16.6456C30.3051 16.6456 30.0128 17.4853 30.0128 18.8793V22.5711H35.4994L35.2603 27.6266H30.0128V41.6684H35.1099C38.743 41.6684 41.6683 38.743 41.6683 35.1099V12.3085C41.6683 8.6754 38.743 5.75004 35.1099 5.75004H12.3084L12.3085 5.75Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+          <a href="">
+            <svg
+              width="46"
+              height="46"
+              viewBox="0 0 46 46"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M29.2219 5.75H18.1964C8.13513 5.75 5.75 8.13513 5.75 18.1964V29.2219C5.75 39.2832 8.13513 41.6683 18.1964 41.6683H29.2219C39.2832 41.6683 41.6683 39.2832 41.6683 29.2219V18.1964C41.6683 8.13513 39.2596 5.75 29.2219 5.75ZM34.7464 31.3724H32.139C31.1513 31.3724 30.8471 30.589 29.0704 28.7886C27.5271 27.2925 26.8435 27.0938 26.463 27.0938C25.9254 27.0938 25.7727 27.2453 25.7727 27.9828V30.3387C25.7727 30.9706 25.5741 31.35 23.9017 31.35C21.136 31.35 18.0674 29.6776 15.9157 26.5618C12.6708 21.9958 11.783 18.5758 11.783 17.8687C11.783 17.4882 11.9345 17.1324 12.6652 17.1324H15.2782C15.9393 17.1324 16.1907 17.4366 16.4477 18.1437C17.7396 21.8735 19.8913 25.1408 20.7791 25.1408C21.1069 25.1408 21.2584 24.9893 21.2584 24.1531V20.301C21.1585 18.5242 20.2235 18.3715 20.2235 17.7407C20.2235 17.4366 20.4749 17.1324 20.8779 17.1324H24.987C25.5426 17.1324 25.7469 17.4366 25.7469 18.0909V23.2877C25.7469 23.8489 25.9983 24.0476 26.1499 24.0476C26.4776 24.0476 26.7582 23.8489 27.3654 23.2406C29.2421 21.136 30.5868 17.8911 30.5868 17.8911C30.7618 17.5106 31.066 17.1548 31.7271 17.1548H34.3401C35.1235 17.1548 35.2986 17.5578 35.1235 18.119C34.7958 19.6387 31.598 24.152 31.598 24.152C31.3231 24.6077 31.2175 24.8063 31.598 25.3148C31.8786 25.6953 32.7912 26.4843 33.3984 27.1915C34.5152 28.4598 35.3738 29.5238 35.6028 30.2601C35.8598 30.9908 35.4805 31.3713 34.743 31.3713L34.7464 31.3724Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+          <a href="">
+            <svg
+              width="46"
+              height="46"
+              viewBox="0 0 46 46"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M23.0009 17.0122C19.7037 17.0122 17.0129 19.703 17.0129 23.0003C17.0129 26.2976 19.7037 28.9884 23.0009 28.9884C26.2982 28.9884 28.989 26.2976 28.989 23.0003C28.989 19.703 26.2982 17.0122 23.0009 17.0122ZM40.9607 23.0003C40.9607 20.5206 40.9832 18.0634 40.8439 15.5882C40.7047 12.7132 40.0488 10.1616 37.9465 8.05929C35.8396 5.95246 33.2925 5.30109 30.4175 5.16183C27.9379 5.02258 25.4806 5.04504 23.0054 5.04504C20.5257 5.04504 18.0685 5.02258 15.5933 5.16183C12.7183 5.30109 10.1668 5.95695 8.06442 8.05929C5.95759 10.1661 5.30622 12.7132 5.16696 15.5882C5.0277 18.0679 5.05016 20.5251 5.05016 23.0003C5.05016 25.4755 5.0277 27.9372 5.16696 30.4124C5.30622 33.2874 5.96208 35.839 8.06442 37.9413C10.1713 40.0482 12.7183 40.6995 15.5933 40.8388C18.073 40.978 20.5302 40.9556 23.0054 40.9556C25.4851 40.9556 27.9424 40.978 30.4175 40.8388C33.2925 40.6995 35.8441 40.0437 37.9465 37.9413C40.0533 35.8345 40.7047 33.2874 40.8439 30.4124C40.9877 27.9372 40.9607 25.48 40.9607 23.0003ZM23.0009 32.2138C17.9023 32.2138 13.7875 28.0989 13.7875 23.0003C13.7875 17.9017 17.9023 13.7868 23.0009 13.7868C28.0996 13.7868 32.2144 17.9017 32.2144 23.0003C32.2144 28.0989 28.0996 32.2138 23.0009 32.2138ZM32.5918 15.5612C31.4013 15.5612 30.44 14.5999 30.44 13.4095C30.44 12.2191 31.4013 11.2577 32.5918 11.2577C33.7822 11.2577 34.7435 12.2191 34.7435 13.4095C34.7439 13.6922 34.6885 13.9721 34.5805 14.2334C34.4724 14.4946 34.314 14.7319 34.1141 14.9318C33.9142 15.1317 33.6769 15.2902 33.4156 15.3982C33.1544 15.5062 32.8744 15.5616 32.5918 15.5612Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+          <a href="">
+            <svg
+              width="46"
+              height="46"
+              viewBox="0 0 46 46"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M43.2026 12.4572C42.9626 11.5296 42.492 10.6836 41.8379 10.004C41.1837 9.32444 40.3691 8.83504 39.4754 8.58479C36.1858 7.66675 22.9993 7.66675 22.9993 7.66675C22.9993 7.66675 9.81285 7.66675 6.52329 8.57991C5.62923 8.82934 4.81415 9.31848 4.15991 9.99819C3.50568 10.6779 3.03531 11.5243 2.79606 12.4523C1.91602 15.8706 1.91602 23.0001 1.91602 23.0001C1.91602 23.0001 1.91602 30.1296 2.79606 33.543C3.28078 35.4279 4.71144 36.9124 6.52329 37.4154C9.81285 38.3334 22.9993 38.3334 22.9993 38.3334C22.9993 38.3334 36.1858 38.3334 39.4754 37.4154C41.292 36.9124 42.7179 35.4279 43.2026 33.543C44.0827 30.1296 44.0827 23.0001 44.0827 23.0001C44.0827 23.0001 44.0827 15.8706 43.2026 12.4572ZM18.8109 29.5436V16.4566L29.7291 22.9512L18.8109 29.5436Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,474 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  min-height: 1296px;
+}
+
+body {
+  position: relative;
+  min-height: 1296px;
+}
+
+.center {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.popup-notification {
+  display: inline-block;
+  padding: 34px 72px;
+  background: #423b2b;
+  border: 6px solid #5d5347;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-family: "Balsamiq Sans Regular";
+  font-size: 24px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  right: -100%;
+  transition: all 0.6s ease-in-out;
+  z-index: 20;
+}
+
+.content-block {
+  background: #423b2b;
+  border: 7px solid #5d5347;
+  border-radius: 14px;
+}
+
+body {
+  background: url("../assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 100vh;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Balsamiq Sans Regular";
+  src: url("../assets/fonts/BalsamiqSans-Regular.ttf");
+}
+.yellow-button {
+  transition: all 0.3s ease-in-out;
+  filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+  padding: 20px 37px;
+  font-family: "Balsamiq Sans Regular";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid #000000;
+  border: none;
+  outline: none;
+  background: #ffdc30;
+  box-shadow: inset 15px 0px 10px 0px #ffdc30, inset -8px -30px 10px 5px rgba(247, 171, 22, 0.6);
+  border-radius: 10px;
+  text-shadow: 1.2px 0.5px 0 #000, 1.10868px 0.95924px 0 #000, 0.84852px 1.34852px 0 #000, 0.45924px 1.60868px 0 #000, 0px 1.7px 0 #000, -0.45924px 1.60868px 0 #000, -0.84852px 1.34852px 0 #000, -1.10868px 0.95924px 0 #000, -1.2px 0.5px 0 #000, -1.10868px 0.04076px 0 #000, -0.84852px -0.34852px 0 #000, -0.45924px -0.60868px 0 #000, 0px -0.7px 0 #000, 0.45924px -0.60868px 0 #000, 0.84852px -0.34852px 0 #000, 1.10868px 0.04076px 0 #000;
+}
+.yellow-button:hover, .yellow-button:focus {
+  cursor: pointer;
+  background: #ffdc30;
+  box-shadow: none;
+}
+
+.page-header {
+  padding: 25px 0 20px 0;
+  margin-bottom: 70px;
+}
+.page-header .header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-header .header-nav a {
+  font-family: "Balsamiq Sans Regular";
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 120%;
+  text-shadow: 2px 1px 0 #000, 1.8478px 1.7654px 0 #000, 1.4142px 2.4142px 0 #000, 0.7654px 2.8478px 0 #000, 0px 3px 0 #000, -0.7654px 2.8478px 0 #000, -1.4142px 2.4142px 0 #000, -1.8478px 1.7654px 0 #000, -2px 1px 0 #000, -1.8478px 0.2346px 0 #000, -1.4142px -0.4142px 0 #000, -0.7654px -0.8478px 0 #000, 0px -1px 0 #000, 0.7654px -0.8478px 0 #000, 1.4142px -0.4142px 0 #000, 1.8478px 0.2346px 0 #000;
+  filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+}
+.page-header .header-nav a img {
+  max-height: 75px;
+  max-width: 75px;
+}
+
+main {
+  margin-bottom: 50px;
+}
+
+.upper-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 48px;
+}
+
+.profile-block {
+  padding: 48px 74px;
+  box-sizing: border-box;
+  width: 60%;
+  max-width: 695px;
+}
+.profile-block h1 {
+  font-family: "Balsamiq Sans Regular";
+  font-weight: normal;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 32px;
+}
+.profile-block .profile {
+  display: flex;
+  align-items: center;
+}
+.profile-block .profile .profile-photo {
+  position: relative;
+  width: 130px;
+  height: 130px;
+}
+.profile-block .profile .profile-photo img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  position: relative;
+  z-index: 10;
+  border: 3px solid white;
+  box-sizing: border-box;
+}
+.profile-block .profile .profile-photo::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 72px);
+  left: calc(50% - 72px);
+  width: 144px;
+  height: 144px;
+  box-sizing: border-box;
+  z-index: 5;
+  background: linear-gradient(#f3f3fe, #cecefa);
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+.profile-block .profile .profile-info {
+  margin-left: 32px;
+}
+.profile-block .profile .profile-info .profile-name {
+  font-family: "Balsamiq Sans Regular";
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 1px 0 #000, 1.8478px 1.7654px 0 #000, 1.4142px 2.4142px 0 #000, 0.7654px 2.8478px 0 #000, 0px 3px 0 #000, -0.7654px 2.8478px 0 #000, -1.4142px 2.4142px 0 #000, -1.8478px 1.7654px 0 #000, -2px 1px 0 #000, -1.8478px 0.2346px 0 #000, -1.4142px -0.4142px 0 #000, -0.7654px -0.8478px 0 #000, 0px -1px 0 #000, 0.7654px -0.8478px 0 #000, 1.4142px -0.4142px 0 #000, 1.8478px 0.2346px 0 #000;
+  margin-bottom: 13px;
+}
+.profile-block .profile .profile-info .exit {
+  display: flex;
+  align-items: center;
+  font-family: "Balsamiq Sans Regular";
+  font-size: 16px;
+  color: #a49982;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+.profile-block .profile .profile-info .exit button {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+}
+.profile-block .profile .profile-info .profile-stats {
+  display: flex;
+  align-items: center;
+}
+.profile-block .profile .profile-info .profile-stats .profile-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-block .profile .profile-info .profile-stats .profile-stat:not(:last-of-type) {
+  margin-right: 80px;
+}
+.profile-block .profile .profile-info .profile-stats .profile-stat p:not(.currency-value) {
+  font-family: "Balsamiq Sans Regular";
+  font-size: 18px;
+  color: #a49982;
+  font-weight: bold;
+  margin-right: 25px;
+}
+.profile-block .profile .profile-info .profile-stats .profile-stat .currency-value {
+  font-family: "Balsamiq Sans Regular";
+  font-size: 18px;
+  color: #fff;
+}
+
+.transactions-history {
+  max-width: 488px;
+  padding: 48px 72px;
+  width: 40%;
+  box-sizing: border-box;
+}
+.transactions-history h1 {
+  font-family: "Balsamiq Sans Regular";
+  font-size: 24px;
+  font-weight: normal;
+  color: #fff;
+  margin-bottom: 32px;
+}
+.transactions-history .transactions-table {
+  font-family: "Balsamiq Sans Regular";
+  font-size: 18px;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.transactions-history .transactions-table tr td {
+  white-space: nowrap;
+}
+.transactions-history .transactions-table tr:not(:last-child) td {
+  padding-bottom: 12px;
+}
+.transactions-history .transactions-table tr td:first-of-type {
+  padding-right: 30px;
+}
+.transactions-history .transactions-table tr td:nth-of-type(2) {
+  padding-right: 35px;
+}
+.transactions-history .transactions-table tr td:nth-of-type(3) {
+  padding-right: 45px;
+}
+.transactions-history .transactions-table tr td:last-of-type {
+  text-align: center;
+  vertical-align: middle;
+}
+.transactions-history .full-history {
+  font-family: "Balsamiq Sans Regular";
+  font-size: 16px;
+  color: #a49982;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.full-history-table {
+  display: none;
+  padding: 48px 72px;
+  margin-bottom: 425px;
+}
+.full-history-table .full-history-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.full-history-table .full-history-header h1 {
+  font-family: "Balsamiq Sans Regular";
+  font-size: 24px;
+  color: #fff;
+}
+.full-history-table .full-history-header button {
+  font-family: "Balsamiq Sans Regular";
+  font-size: 18px;
+  color: #a49982;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+.full-history-table .full-history-header button img {
+  margin-left: 15px;
+}
+.full-history-table .full-transactions-table .full-transactions-table-row {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  padding-bottom: 20px;
+}
+.full-history-table .full-transactions-table .full-transactions-table-row:not(:last-of-type) {
+  border-bottom: 1px solid #a49982;
+}
+.full-history-table .full-transactions-table .full-transactions-table-row:not(:first-of-type) {
+  padding-top: 20px;
+}
+.full-history-table .full-transactions-table .full-transactions-table-row .transactions-table-item {
+  color: #fff;
+  font-family: "Balsamiq Sans Regular";
+  font-size: 18px;
+}
+.full-history-table .full-transactions-table .full-transactions-table-row .transactions-table-item:last-of-type {
+  text-align: right;
+}
+.full-history-table .full-transactions-table .full-transactions-table-row .transactions-table-item .declined {
+  color: #f91212;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.full-history-table .full-transactions-table .full-transactions-table-row .transactions-table-item .declined img {
+  margin-left: 16px;
+}
+.full-history-table .full-transactions-table .full-transactions-table-row .transactions-table-item .successful {
+  color: #1aec87;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.full-history-table .full-transactions-table .full-transactions-table-row .transactions-table-item .successful img {
+  margin-left: 16px;
+}
+.full-history-table .full-transactions-table .full-transactions-table-row .transactions-table-item .waiting {
+  color: #a49982;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.full-history-table .full-transactions-table .full-transactions-table-row .transactions-table-item .waiting img {
+  margin-left: 16px;
+}
+.full-history-table .full-transactions-table .full-transactions-table-row .header-item {
+  text-align: left;
+  font-family: "Balsamiq Sans Regular";
+  font-size: 18px;
+  color: #a49982;
+}
+
+.sale {
+  padding: 48px 72px;
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  column-gap: 35px;
+}
+.sale .sale-number h1 {
+  font-family: "Balsamiq Sans Regular";
+  font-size: 18px;
+  font-weight: normal;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.sale .sale-number .sale-slider {
+  box-sizing: border-box;
+  border: 4px solid #52472a;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #eda80e 0%, #edbc15 100%), #ffdc30;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-height: 50px;
+  position: relative;
+  font-size: 0;
+  margin-bottom: 50px;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.sale .sale-number .sale-slider .sale-slider-thumb {
+  cursor: grab;
+  background: #574e68;
+  border-radius: 10px;
+  border: 2px solid #0b0f1e;
+  outline: none;
+  filter: drop-shadow(0 4px 0 rgba(0, 0, 0, 0.25));
+  font-family: "Balsamiq Sans Regular";
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 1px 0 #000, 1.8478px 1.7654px 0 #000, 1.4142px 2.4142px 0 #000, 0.7654px 2.8478px 0 #000, 0px 3px 0 #000, -0.7654px 2.8478px 0 #000, -1.4142px 2.4142px 0 #000, -1.8478px 1.7654px 0 #000, -2px 1px 0 #000, -1.8478px 0.2346px 0 #000, -1.4142px -0.4142px 0 #000, -0.7654px -0.8478px 0 #000, 0px -1px 0 #000, 0.7654px -0.8478px 0 #000, 1.4142px -0.4142px 0 #000, 1.8478px 0.2346px 0 #000;
+  padding: 26px 40px 22px 40px;
+  position: relative;
+  box-sizing: border-box;
+  width: 125px;
+  white-space: nowrap;
+  z-index: 10;
+}
+.sale .sale-number .sale-slider .sale-slider-thumb:active {
+  cursor: grabbing;
+}
+.sale .sale-number .sale-slider .right-darkening {
+  position: absolute;
+  font-size: 0;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  width: 100%;
+  height: 102%;
+  background: #52472a;
+  display: flex;
+  box-shadow: -1px 2px #52472a;
+}
+.sale .sale-number .sell-block {
+  display: flex;
+}
+.sale .sale-number .sell-block:not(:first-of-type) {
+  margin-bottom: 35px;
+}
+.sale .sale-number .sell-block .price-block {
+  display: flex;
+  width: 355px;
+  justify-content: space-between;
+}
+.sale .sale-number .sell-block .price-block .price h1 {
+  margin-bottom: 25px;
+}
+.sale .sale-number .sell-block .price-block .price p {
+  font-family: "Balsamiq Sans Regular";
+  font-size: 18px;
+  color: #96948b;
+}
+.sale .sale-number .sell-block .price-block .price input {
+  padding: 16px 22px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.sale .sale-number .sell-block .price-block .price input::placeholder {
+  color: #96948b;
+  font-size: 18px;
+}
+.sale .sale-number .sell-block .sell-button {
+  margin-left: auto;
+  align-self: flex-end;
+}
+
+.page-footer {
+  margin-top: auto;
+}
+.page-footer .outer-text {
+  margin: 0 auto;
+  max-width: 680px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.page-footer .outer-text a {
+  font-family: "Balsamiq Sans Regular";
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+.page-footer .social-links {
+  width: 100%;
+  background: #eda00b;
+  padding: 42px 0;
+}
+.page-footer .social-links .social-links-inside {
+  max-width: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=style.css.map */
